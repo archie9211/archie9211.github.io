@@ -18,7 +18,9 @@ You can installed Nvidia Drivers from their official site
 
     a) run `nvidia-smi` in terminal<br>
     <p>It should give some output in tabular form like here :</p>
+    
     ![](https://i.imgur.com/blHMfTv.png)
+    
     b) make sure Nouveau drivers are disbaled ( These are automatically disabled after nvidia drivers installation)<br>
     run `lsmod | grep nouveau` in terminal
     
