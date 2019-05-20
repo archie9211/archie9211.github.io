@@ -3,7 +3,9 @@ layout: post
 author: Nageen
 categories: [ how to ] 
 featured: true
+image: assets/images/tf-cuda-cudnn.png
 ---
+sample atricle, will improve it.
 
 1. Make sure You have nvidia Drivers installed<br>
 Open<br>
