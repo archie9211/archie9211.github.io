@@ -2,7 +2,7 @@
 layout: post
 title:  "The 10 Deep Learning Methods AI Practitioners Need to Apply"
 author: Nageen
-categories: [ deep learning , dl ] 
+categories: [ Jekyll ]
 image: assets/images/dl.jpeg
 featured: true
 <!-- toc: true -->
