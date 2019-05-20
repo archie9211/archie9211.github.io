@@ -3,13 +3,14 @@ layout: post
 title:  "The 10 Deep Learning Methods AI Practitioners Need to Apply"
 author: Nageen
 categories: [ Jekyll ]
-<!-- image: assets/images/14.jpg -->
+image: assets/images/dl.jpeg
 featured: true
-toc: true
+<!-- toc: true -->
 ---
 
-
-![](https://cdn-images-1.medium.com/max/2560/1*CPI-6ZtpYfMyV3bTt8EumQ.jpeg)
+<span style="color:red">NOTE: JUST TOOK THIS POST AS SAMPLE POST
+ORIGINAL POST AT : [this link](https://medium.com/cracking-the-data-science-interview/the-10-deep-learning-methods-ai-practitioners-need-to-apply-885259f402c1)
+</span>
 
 # The 10 Deep Learning Methods AI Practitioners Need to Apply
 
