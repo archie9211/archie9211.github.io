@@ -16,15 +16,15 @@ You can installed Nvidia Drivers from their official site
 
 2. Reboot and make sure nvidia drivers are installed successfully<br>
 
-    a) run `nvidia-smi` in terminal(without qoutes)<br>
+    a) run `nvidia-smi` in terminal<br>
     <p>It should give some output in tabular form like here :</p>
     ![](https://i.imgur.com/blHMfTv.png)
-    b) make sure Nouveau drivers are disbaled ( These are automatically disabled adter nvidia drivers installation)<br>
-    <p>run ```lsmod | grep nouveau``` in terminal (without qoutes)</p>
-            If there is no output
-                <p>then its disabled and we are good to go.</p>
-            else
-                <p>Create a file at `/etc/modprobe.d/blacklist-nouveau.conf` with the following contents:</p>
+    b) make sure Nouveau drivers are disbaled ( These are automatically disabled after nvidia drivers installation)<br>
+    <p>run `lsmod | grep nouveau` in terminal</p>
+        If there is no output
+            <p>then its disabled and we are good to go.</p>
+        else
+            <p>Create a file at `/etc/modprobe.d/blacklist-nouveau.conf` with the following contents:</p>
 
         blacklist nouveau
         options nouveau modeset=0
