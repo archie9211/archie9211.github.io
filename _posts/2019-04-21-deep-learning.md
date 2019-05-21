@@ -5,6 +5,7 @@ author: Nageen
 categories: [ deep learning , dl ] 
 image: assets/images/dl.jpeg
 featured: true
+published: false
 <!-- toc: true -->
 ---
 
