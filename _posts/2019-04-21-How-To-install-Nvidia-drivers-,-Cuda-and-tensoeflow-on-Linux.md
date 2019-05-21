@@ -5,46 +5,51 @@ categories: [ how to ]
 featured: true
 image: assets/images/tf-cuda-cudnn.png
 ---
-sample atricle, will improve it.
+Getting GPU working for tensorflow and CUDA is a difficult task for naive linux users. In this guide, you can easily understand the installation process. This guide is focussed on debian based distros, but it can be used on any linux distro with respective command for the task according to distro.
 
-1. Make sure You have nvidia Drivers installed<br>
-Open<br>
+So, What do we need for working tensorflow and nvidia drivers on linux
 
-You need nvidia driver version 418 (last time I checked ,390 didnot work)<br>
+> * A linux Machine, ofcourse.
+> * Nvidia Drivers Installed.
+> * Compatible tensorflow version Installed
+> * Tensorflow compatible Cuda Version Installed.
 
-You can installed Nvidia Drivers from their official site
+1. Make sure You have nvidia Drivers installed <br>
+I have nvidia geforce 940mx, So the latest drivers for me was <b>v430.14</b><br>
+You can download and install Latest drivers from [here](https://www.nvidia.in/Download/index.aspx?lang=en-in)
 
 2. Reboot and make sure nvidia drivers are installed successfully<br>
 
-    a) run `nvidia-smi` in terminal<br>
-    <p>It should give some output in tabular form like here :</p>
+    * run `nvidia-smi` in terminal<br>
+    It should give some output in tabular form like here :
     
-    ![](https://i.imgur.com/blHMfTv.png)
+    [![Image](https://i.imgur.com/blHMfTv.png)](https://i.imgur.com/blHMfTv.png)
     
-    b) make sure Nouveau drivers are disbaled ( These are automatically disabled after nvidia drivers installation)<br>
+    * make sure Nouveau drivers are disbaled ( These are automatically disabled after nvidia drivers installation)<br> to check: 
     run `lsmod | grep nouveau` in terminal
     
-    If there is no output
-            then its disabled and we are good to go.
-    else
-            Create a file at `/etc/modprobe.d/blacklist-nouveau.conf` with the following contents:
+        * If there is no output
+            * then its disabled and we are good to go.
+        * else
+            * Create a file at `/etc/modprobe.d/blacklist-nouveau.conf` with the following contents:
+            ```
+            blacklist nouveau
+            options nouveau modeset=0
+            ```
+            #Regenerate the kernel initramfs:<br>
+            `$ sudo update-initramfs -u` (Debian based)
+            `$ sudo grub-mkconfig -o /boot/grub/grub.cfg` (You can use this if You are on arch linux)
 
-        blacklist nouveau
-        options nouveau modeset=0
-        #Regenerate the kernel initramfs:
-        $ sudo update-initramfs -u
-
-3. Download cuda runfile from https://developer.nvidia.com/cuda-toolkit (in my case i used cuda 10.0,you can check latest cuda version supported by tf here: https://www.tensorflow.org/install/gpu)<br> <br>
+3. Download cuda runfile from [this link](https://developer.nvidia.com/cuda-toolkit) (in my case I used cuda 10.0,you can check latest cuda version supported by tf [here](https://www.tensorflow.org/install/gpu))<br> 
             as shown here :<br>
-            ![](https://i.imgur.com/2RwjtKA.png)
+            [![](https://i.imgur.com/2RwjtKA.png)](https://i.imgur.com/2RwjtKA.png)
 4. Installing CUDA <br>
-
-            open terminal in the file location folder and run
-            $sudo sh cuda_10.0.130_410.48_linux.run  #change the name of file accordingly
-                * accept the terms and conditons by typing accept when prompt asks for it
-                * when a selection menu comes up select everything accept drivers
-                * and install
-                * wait for installation (might take 5-10 mins)
+    open terminal in the file location folder and run<br>
+            `$ sudo sh cuda_10.0.130_410.48_linux.run`  #change the name of file accordingly<br>       
+    * accept the terms and conditons by typing accept when prompt asks for it
+    * when a selection menu comes up select everything accept drivers
+    * and install
+    * wait for installation (might take 5-10 mins)
 
 5. Installing cuDNN 7.5.0 (compatible with cuda 10.0,Note : 10.1 was not supported at that time)<br>
             * Download from https://developer.nvidia.com/cudnn <br>
@@ -104,3 +109,5 @@ You can installed Nvidia Drivers from their official site
             incarnation: 1732355850559614807
             physical_device_desc: "device: 0, name: GeForce 940MX, pci bus id: 0000:01:00.0, compute capability: 5.0"
             ]
+
+And you will have a Working GPU with tensorflow. Happy Coding.
