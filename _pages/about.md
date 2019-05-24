@@ -2,7 +2,7 @@
 layout: page
 title: [Stupid Blog - About ]
 permalink: /about
-comments: true
+comments: false 
 ---
 
 <div class="row justify-content-between">
