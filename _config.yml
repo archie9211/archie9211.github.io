@@ -4,7 +4,7 @@ title: "Stupid Blog"
 description: "Blog written for no reason."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: /blogs
+baseurl: "" 
 # google_analytics: '#'
 disqus: 'nageenpawar'
 # mailchimp-list: '#'
