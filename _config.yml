@@ -2,6 +2,7 @@
 name: "Stupid Blog"
 title: "Stupid Blog"
 description: "Blog written for no reason."
+url: https://archie9211.github.io
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: "" 
