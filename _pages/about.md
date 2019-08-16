@@ -14,5 +14,5 @@ comments: false
 
 <h4>Questions or bug reports?</h4>
 
-<p>Head over to my <a href="https://github.com/archie9211/blogs">Github repository</a>!</p>
+<p>Head over to my <a href="https://github.com/archie9211/archie9211.github.io">Github repository</a>!</p>
 
