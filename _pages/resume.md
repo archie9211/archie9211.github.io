@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /resume
+published: false
 ---
 <center><h1>My resume</h1></center>
 <hr>
