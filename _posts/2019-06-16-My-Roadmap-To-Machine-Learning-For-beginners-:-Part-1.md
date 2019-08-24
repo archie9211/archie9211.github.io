@@ -17,26 +17,19 @@ This is the Roadmap I am following for Machine Learning. My personal view is as 
 ## What we usually do?
 <br>
 
-<div style="text-align: justify;">
-We usually get carried away by hearing buzz-words Machine Learning, Deep learning, and Artificial Intelligence, etc. We directly dive into coding Deep Learning Projects without having background knowledge of the algorithms and math used behind the scenes(at least this is the mistake I did at first). We usually see many articles and courses about "Learn Machine learning without Math" etc.</div>
+We usually get carried away by hearing buzz-words Machine Learning, Deep learning, and Artificial Intelligence, etc. We directly dive into coding Deep Learning Projects without having background knowledge of the algorithms and math used behind the scenes(at least this is the mistake I did at first). We usually see many articles and courses about "Learn Machine learning without Math" etc.
 <img style="display: block; margin-left: auto;margin-right: auto;width: 50%" height="300" width="400" src="../assets/images/newbie-ml.jpg">
-<div style="text-align: justify;">
  Here, We need to understand that there is <b>No</b> Machine learning without math. Mathematics is the soul of Machine Learning and AI because it provides ways to implement the algorithms in these very fields. In this way, we head straight towards Machine Learning techniques without learning Pre-Requisites.
-</div>
 
 <br> 
 
 ## Why math is important ?
-<div style="text-align: justify;">
 Earlier, I used to fear mathematics A Lot. I wanted to skip Mathematical Part and dive into this field. But, After reading articles, suggestions from friends, facing problems which were inevitable and impossible for me to solve without the knowledge of the core concept behind this, What I learned is that, there is no escaping mathematics if you want to make a career in AI, ML or DL. You have to note that "If you think that you can skip the mathematics and start learning Machine Learning, then you are very much mistaken". When we start training models without mathematical knowledge using high level, easy to use APIs (TensorFlow, Keras, PyTorch, etc), there comes a phase when are stuck at some accuracy of the model and we are unable to tweak the model, change hyperparameters to increase the accuracy in our model. In high-level APIs, if we don't have any information about the implementation of the algorithms they implemented, how would you expect yourself to fix any problem when faced. If you just want to train models and use them, It's okay to skip the math but to have complete control over models and the algorithms and knowledge of modifying the algorithms according to our need, We need Maths. because in real-world application development, We will never have ideal Data, ideal problems. Sometimes, we have to think out of those boundaries which these API set and modify the algorithms to fit our problems and make a better and efficient product.
 
-</div>
 <br>
 
 ## Why its worth spending time ?
-<div style="text-align: justify;">
 So for getting ready for this AI and ML adventure, We will need time, patience and lot of practice. 
-</div>
 <hr>
 `Give me six hours to chop down a tree and I will spend the first four sharpening the axe.`
 <p style="text-align: right">~Abraham Lincoln</p>
@@ -57,15 +50,11 @@ Some key points:
 
 
 ## Roadmap For Machine Learning : Part 1
-<div style="text-align: justify;">
 For getting ready to efficiently code machine learning models first we need following things to learn first:
-</div>
 
 <br>
 > ### 1. Linear algebra
-<div style="text-align: justify;">
 Linear Algebra is the integral part of machine learning. The basic Foundation of machine learning is Linear algebra. 
-</div>
 <hr>
 `Linear Algebra is the mathematics of the 21st century`
 <p style="text-align: right">~Skyler Speakman</p>
