@@ -41,7 +41,7 @@ permalink: /blog
 
     <div class="row listrecent">
 
-        {% for post in paginator.posts %}
+        {% for post in site.posts %}
 
         {% include postbox.html %}
 

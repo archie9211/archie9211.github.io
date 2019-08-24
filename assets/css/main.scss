@@ -13,3 +13,13 @@
 	"syntax",
     "starsnonscss"
 ;
+
+.tile{
+
+}
+.tile:hover{
+	transform: scale(1.01);
+	box-shadow : 10px 10px 10px grey ;
+	transition-duration: 200ms;
+
+}

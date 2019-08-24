@@ -2,7 +2,7 @@
 layout: post
 author: Nageen
 categories: [ how to ] 
-featured: true
+featured: false
 image: assets/images/tf-cuda-cudnn.png
 ---
 Getting GPU working for tensorflow and CUDA is a difficult task for naive linux users. In this guide, you can easily understand the installation process. This guide is focussed on debian based distros, but it can be used on any linux distro with respective command for the task according to distro.
