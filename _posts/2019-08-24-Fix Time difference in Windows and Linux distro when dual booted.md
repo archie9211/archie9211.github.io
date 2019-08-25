@@ -35,6 +35,6 @@ If You want to revert this behaviour , Heres' the command for that.
   sandbox="allow-scripts allow-same-origin">
 </iframe>
 
-Other way if changing the way how windows interprets time. This one if bit longer and involves editing regitry which can mess with system(typical Windows thing). So that one is not recommeneded. 
+Other method of changing the way how windows interprets time. This one is bit longer and involves editing regitry which can mess with system(typical Windows thing). So that one is not recommeneded. 
 
 I hope your problem is now solved. And for any doubts please comment below.
