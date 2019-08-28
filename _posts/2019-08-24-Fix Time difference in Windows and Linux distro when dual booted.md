@@ -23,7 +23,7 @@ Easiest One solution is to make Linux think the System Clock time as Local Time
 Run following command int terminal for this.
 <iframe
   src="https://carbon.now.sh/embed?bg=rgba(0%2C0%2C0%2C0)&t=material&wt=none&l=application%2Fx-sh&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=42px&ph=56px&ln=false&fl=1&fm=Hack&fs=18px&lh=90%2525&si=false&es=4x&wm=false&code=timedatectl%2520set-local-rtc%25201%2520--adjust-system-clock"
-  style="transform:scale(0.7); width:1024px; height:473px; border:0; overflow:hidden;"
+  style="transform:scale(1.0); width:1024px; height:473px; border:0; overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
 
@@ -31,7 +31,7 @@ If You want to revert this behaviour , Heres' the command for that.
 
 <iframe
   src="https://carbon.now.sh/embed?bg=rgba(0%2C0%2C0%2C0)&t=material&wt=none&l=application%2Fx-sh&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=42px&ph=56px&ln=false&fl=1&fm=Hack&fs=18px&lh=90%2525&si=false&es=4x&wm=false&code=timedatectl%2520set-local-rtc%25200%2520--adjust-system-clock"
-  style="transform:scale(0.7); width:1024px; height:473px; border:0; overflow:hidden;"
+  style="transform:scale(1.0); width:1024px; height:473px; border:0; overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
 
