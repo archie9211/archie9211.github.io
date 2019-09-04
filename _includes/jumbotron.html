@@ -11,13 +11,13 @@
             {% if categories_list.first[0] == null %}
             {% for category in categories_list %}
             <a class="mt-1 mb-1"
-                href="categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }}
+                href="{{ site.url }}/blog/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }}
                 ({{ site.tags[category].size }})</a>
             {% endfor %}
             {% else %}
             {% for category in categories_list %}
             <a class="mt-1 mb-1"
-                href="categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }}
+                href="{{ site.url }}/blog/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }}
                 ({{ category[1].size }})</a>
             {% endfor %}
             {% endif %}

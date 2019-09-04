@@ -11,7 +11,7 @@ disqus: 'nageenpawar'
 # mailchimp-list: '#'
 google_analytics: 'UA-141832283-1'
 include: ["_pages"]
-permalink: /:title/
+permalink: /blog/:title/
 
 # Authors
 authors:
@@ -55,9 +55,9 @@ kramdown:
       line_numbers: true
 
 # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
-adsense: "enabled"
-adsense-data-ad-client: "ca-pub-4243472451356722"
-adsense-data-ad-slot: "#"
+# adsense: "enabled"
+# adsense-data-ad-client: "ca-pub-4243472451356722"
+# adsense-data-ad-slot: "#"
 
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "enabled"
