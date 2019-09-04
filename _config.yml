@@ -11,7 +11,7 @@ disqus: 'nageenpawar'
 # mailchimp-list: '#'
 google_analytics: 'UA-141832283-1'
 include: ["_pages"]
-permalink: /blog/:title/
+permalink: /blog/:title
 
 # Authors
 authors:
