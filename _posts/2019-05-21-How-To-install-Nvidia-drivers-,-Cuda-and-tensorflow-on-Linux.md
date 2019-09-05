@@ -20,18 +20,18 @@ You can download and install Latest drivers from [here](https://www.nvidia.in/Do
 
 2. Reboot and make sure nvidia drivers are installed successfully<br>
 
-    * run {% ihighlight shell %} nvidia-smi {% endihighlight %} in terminal<br>
+    * run ` nvidia-smi ` in terminal<br>
     It should give some output in tabular form like here :
     
     [![Image](https://i.imgur.com/blHMfTv.png)](https://i.imgur.com/blHMfTv.png)
     
     * make sure Nouveau drivers are disbaled ( These are automatically disabled after nvidia drivers installation)<br> to check: 
-    run {% ihighlight shell %} lsmod | grep nouveau {% endihighlight %} in terminal
+    run ` lsmod | grep nouveau ` in terminal
     
         * If there is no output
             * then its disabled and we are good to go.
         * else
-            * Create a file at {% ihighlight shell %} /etc/modprobe.d/blacklist-nouveau.conf {% endihighlight %} with the following contents:
+            * Create a file at ` /etc/modprobe.d/blacklist-nouveau.conf ` with the following contents:
 ```conf
 blacklist nouveau
 options nouveau modeset=0
@@ -48,7 +48,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg # (Arch linux based)
             [![](https://i.imgur.com/2RwjtKA.png)](https://i.imgur.com/2RwjtKA.png)
 4. Installing CUDA <br>
     open terminal in the file location folder and run<br>
-    * {% ihighlight shell %} sudo sh cuda_10.0.130_410.48_linux.run # change the name of file accordingly {% endihighlight %}        
+    * ` sudo sh cuda_10.0.130_410.48_linux.run # change the name of file accordingly `        
     * accept the terms and conditons by typing accept when prompt asks for it
     * when a selection menu comes up select everything accept drivers
     * and install
