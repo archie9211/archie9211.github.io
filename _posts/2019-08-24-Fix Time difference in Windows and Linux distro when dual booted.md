@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to fix the different time on when dual booted Linux and Windows
+title: How to fix the different time on PC when dual booted Linux and Windows
 date: 2019-08-24 17:28
 category: [linux-utils, how-to,guide]
 author: Nageen
@@ -22,7 +22,7 @@ Easiest One solution is to make Linux think the System Clock time as Local Time
 
 Run following command int terminal for this.
 ```fish
-timedatectl set-local-rtc 0 --adjust-system-clock
+timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 If You want to revert this behaviour , Heres' the command for that.
 ```fish
