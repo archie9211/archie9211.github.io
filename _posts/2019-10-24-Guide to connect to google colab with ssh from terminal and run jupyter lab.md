@@ -11,14 +11,6 @@ image: assets/images/colab-ssh-jupyter.jpeg
 featured: true
 
 ---
-
-
-<div style="text-align:center"><img src="https://cdn-images-1.medium.com/max/2000/1*BShWDVSFUWnfQ6kqAnKM0A.jpeg" /> </div>
-
----
----
----
-
 Google colab is a good option to experiment and try heavy computational tasks on a high end computer for free. Notebook interface provided by google is perfect python programs.
 
 I have made a script to connect to colab instance with just few comands.
