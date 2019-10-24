@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to fix the different time on PC when dual booted Linux and Windows
+title: How to fix the different time on PC when dual booted with Linux and Windows
 date: 2019-08-24 17:28
 category: [linux-utils, how-to,guide]
 author: Nageen
@@ -10,7 +10,7 @@ featured: true
 
 ---
 
-Windows and Linux both are quite different in many respect. This also applies for the interpretition of the time from the hardware Clock. Yes, Computers have the clock which keeps running even if your system if turned off. Thats why we get synced time everytime we boot up computer. 
+Windows and Linux both are quite different in many respect. This also applies for the interpretition of the time from the hardware Clock. Yes, Computers have the clock which keeps running even if your system is turned off. Thats why we get synced time everytime we boot up computer. 
 
 ### How linux and windows interpret time differently? 
 
