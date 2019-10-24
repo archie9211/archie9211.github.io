@@ -3,10 +3,12 @@ layout: post
 title: "Guide to connect to google colab with ssh from terminal and run jupyter lab"
 date: 2019-10-24 23:38
 category: [guide, how-to, how to]
-author: 
+author: Nageen
 tags: []
 summary: 
 published: true 
+image: assets/images/colab-ssh-jupyter.jpeg
+featured: true
 
 ---
 
