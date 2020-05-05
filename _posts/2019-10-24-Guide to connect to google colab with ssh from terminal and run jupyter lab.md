@@ -57,13 +57,13 @@ you will get a bash shell logged in to colab instance. for jupyterlab, first ins
 
     pip3 install jupyterlab && apt install tmux
 
-now run tmux and tun following command in it: (chose port of your choice {I prefer 5 digit random number})
+now run tmux and run following command in it: (chose port of your choice {I prefer 5 digit random number})
 
     jupyter lab --ip 0.0.0.0 --port 56784
 
 now press ctrl + b and then “ to split split window and then run follow in new window: (use the same port you used for jupyter lab)
 
-    ssh -R 80:localhost:56784 serveo.net 
+    ssh -R 80:localhost:56784 random_string@ssh.localhost.run 
 
 You should get a URL after this on terminal open this in browser and you should get your jupyter lab on browser connected to google colab instance.
 
