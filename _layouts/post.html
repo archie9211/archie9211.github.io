@@ -41,7 +41,7 @@ post_class: post-template
                         <br>
                         Posted on:
                         <span class="post-date"><time class="post-date"
-                                datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>
+													  datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span><a href={{site.url}}/#disqus_thread>Post a comment</a>
                     </div>
                 </div>
                 {% endif %}
@@ -191,3 +191,4 @@ https://search.google.com/structured-data/testing-tool/u/0/
 }
 </script>
 {% endif %}
+<script id="dsq-count-scr" src="//archie9211.disqus.com/count.js" async></script>
