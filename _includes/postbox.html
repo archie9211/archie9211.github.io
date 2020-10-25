@@ -2,10 +2,10 @@
 {% assign author = site.authors[post.author] %}
 
 <div class="col-lg-4 col-md-6 mb-30px card-group">
-    <div class="card h-100 tile">
-        <div class="maxthumb">
+    <div class="card h-50 tile">
+        <div class="maxthumb embed-responsive">
             <a href="{{ site.baseurl }}{{ post.url }}">
-                {% if post.image %}
+                <!-- {% if post.image %}
 
                 {% if site.lazyimages == "enabled" %}
                 <img class="img-fluid lazyimg"
@@ -13,12 +13,12 @@
                     data-src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}"
                     alt="{{ post.title }}">
                 {% else %}
-                <img class="img-fluid"
+                <img class="card-img-top embed-responsive-item"
                     src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}"
                     alt="{{ post.title }}">
-                {% endif %}
+                {% endif %} -->
 
-                {% endif %}
+                <!-- {% endif %} -->
             </a>
         </div>
         <div class="card-body">
@@ -61,4 +61,3 @@
         </div>
     </div>
 </div>
-<!-- end post -->

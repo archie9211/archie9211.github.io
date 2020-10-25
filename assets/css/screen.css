@@ -1,14 +1,25 @@
 /* 
 Template Name: Mediumish 
-Copyright: Nageen, WowThemes.net, https://www.wowthemes.net 
+Copyright: Sal, WowThemes.net, https://www.wowthemes.net 
 License: https://www.wowthemes.net/freebies-license/ 
 */
+
+
 @media screen and (min-width:1500px) {
     html { font-size:18px; } /* Increase the font size on higher resolutions */
     .container {max-width:80%;}
 }
 .mainheading {
     padding: 1rem 0rem;
+    
+}
+.center {
+  margin: auto;
+  width: 50%;
+  /* border: 3px solid green; */
+}
+.parent{
+    text-align:center;
 }
 
 a {
@@ -116,15 +127,7 @@ section.recent-posts {
     height: 100%;
 }
 
-.maxthumb {
-    max-height: 300px;
-    overflow: hidden;
-}
 
-.listfeaturedtag .card,
-.card-footer {
-    border: 0;
-}
 
 .listfeaturedtag .thumbnail {
     background-size: cover;
@@ -136,21 +139,19 @@ section.recent-posts {
     border-bottom-left-radius: .25rem;
 }
 
-.listfeaturedtag .card-block {
-    padding-left: 0;
-}
 
 .listfeaturedtag h2.card-title,
 .listrecent h2.card-title {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1.25;
+     object-fit: cover;
 }
 
 .listfeaturedtag h4.card-text,
 .listrecent h4.card-text {
     color: rgba(0, 0, 0, .44);
-    font-size: 0.95rem;
+    font-size: 0.75rem;
     line-height: 1.6;
     font-weight: 400;
 }
@@ -160,7 +161,6 @@ section.recent-posts {
     width: 100%;
     height: 100%;
     max-height: 100%;
-    border-radius: 10px;
 }
 
 @media (max-width:991px) {
@@ -326,19 +326,6 @@ span.post-read-more a:hover {
     background: #fff;
 }
 
-.footer_home {
-    border-top: 1px solid rgba(0, 0, 0, .05) !important;
-    padding-top: 135px;
-    padding-bottom: 12px;
-    font-size: 0.8rem;
-    color: rgba(0, 0, 0, .44);
-    margin-top: 50px;
-    margin-bottom: 62px;
-    position: relative;
-    background: #fff;
-}
-
-
 .link-dark {
     color: rgba(0, 0, 0, .8);
 }
@@ -497,12 +484,15 @@ blockquote {
     padding: 40px 0 46px;
     position: relative;
 }
-
-.listrelated .card {
-    box-shadow: 0 1px 7px rgba(0, 0, 0, .05);
-    border: 0;
+.card{
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
 }
-
+.maxthumb{
+    height: 200px;
+    border: 10px;
+}
 ul.tags {
     list-style: none;
     padding-left: 0;
@@ -858,10 +848,7 @@ iframe {
     }
 }
 
-.card .img-fluid {
-    width: 100%;
-    border-radius: 10px;
-}
+
 
 .sticky-top-80 {
     top: 80px;
@@ -914,3 +901,17 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+html,
+body {
+  height: 100%;
+}
+.tile{
+	border-radius: 10px;
+
+}
+.tile:hover{
+	transform: scale(1.0021);
+	box-shadow : 2px 2px 2px 2px grey ;
+	transition-duration: 100ms;
+
+} 

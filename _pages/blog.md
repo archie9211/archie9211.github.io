@@ -8,21 +8,21 @@ permalink: /blog
 
 <!-- Featured
 ================================================== -->
-<section class="featured-posts">
+<section class="feature-posts">
     <div class="section-title">
-        <h2><span>Featured</span></h2>
+        <h2 class="text-capitalize center" style="text-align:center">Featured</h2>
     </div>
-    <div class="row">
+    <div class="row listrecent">
 
-    {% for post in site.posts %}
+        {% for post in site.posts %}
 
         {% if post.featured == true %}
 
-            {% include featuredbox.html %}
+        {% include postbox.html %}
 
         {% endif %}
 
-    {% endfor %}
+        {% endfor %}
 
     </div>
 </section>
@@ -34,9 +34,7 @@ permalink: /blog
 <section class="recent-posts">
 
     <div class="section-title">
-
-        <h2><span>All Stories</span></h2>
-
+        <h2 class="text-capitalize center" style="text-align:center">All Posts</h2>
     </div>
 
     <div class="row listrecent">
